@@ -3,32 +3,47 @@
       display:grid;
    /* Step 2: setup rows amd columns */
       grid-template-columns: 300px 300px 300px;
-      grid-template-rows: 100px 350px 600px 100px;
+      grid-template-rows: 100px 250px 700px 150px;
       grid-template-areas: 
       "hd hd hd hd hd hd hd hd"
       "feat feat feat feat feat feat feat feat"
       "main main main main main main main main"
       "ft ft ft ft ft ft ft ft";
-      border: 2px solid yellow;
 }
 
 .box {
-  border: 1px solid red;
-  background: #F8FA9D;
+  font-family: Arial;
+  padding: 20px;
+  background: #f1f1f1;
 }
 
 .header {
   grid-area: hd;
+  padding: 5px;
+  font-size: 25px;
+  text-align: center;
+  background: #ddd;
 }
 
 .footer {
-  grid-area: ft;  
+  grid-area: ft;
+  padding: 5px;
+  background: #ddd;
+  margin-top: 5px;
+}
+
+.footer::content social-icons {
+  margin-left: 50%;
 }
 
 .feature {
+  margin-top: 5px;
   grid-area: feat;
+  padding: 5px;
 }
 
 .content {
+  margin-top: 5px;
   grid-area: main;
+  padding: 5px;
 }
