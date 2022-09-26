@@ -53,3 +53,20 @@ body {
     padding: 0;
   }
 }
+
+/* Green Button */
+.custom-button {
+  background-color: #3cab40; 
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  color: white;
+  padding: 15px 32px;
+}
+
+.custom-button:hover {
+  opacity: 0.85;
+  color: black;
+}
