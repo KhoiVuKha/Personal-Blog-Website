@@ -2,21 +2,52 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Blog Posts List</title>
+    <title>Personal Blog Website</title>
     <meta
       content="width=device-width, initial-scale=1, maximum-scale=1"
       name="viewport"
     />
-    <link rel="stylesheet" href="../css/blog-post.css">
+    <link rel="stylesheet" href="../css/style.css">
+
   </head>
+
+  <!-- Body of the Blog -->
   <body>
-  <div class = "container">
-    <div class="header box">Header</div>
-    <div class="feature box">Feature Content</div>
-    <div class="content box">Content</div>
-    <div class="footer box">
-      <a href="../index.html">Click here to go to Home page</a>
+    <!-- Header of the blog -->
+    <div class="header">
+        <h2>KhoiVu's Blog</h2>
+        <div class="nav-bar">
+          <a href="../index.html">Home</a>
+          <a class="active" href="blog-post-list.html">Blog Posts</a>
+          <a href="about.html">About</a>
+        </div>
     </div>
-  </div>
+
+    <div class="row">
+      <!-- Blog's Content -->
+      <div class="content">
+        <div class="card">
+          <h2><a href="blog-post-welcome-to-vietnam.html" style="text-decoration: none;">Welcome to Vietnam!</a></h2>
+          <h5>Khoi Vu, Sep 25, 2022</h5>
+          <div class="image-frame" style="height:200px;">Image</div>
+          <p>Vietnam, or Viet Nam (Vietnamese: Việt Nam, [vîət nāːm]), officially the Socialist Republic of Vietnam, is a country in Southeast Asia, at the eastern edge of mainland Southeast Asia, with an area of 311,699 square kilometres (120,348 sq mi) and population of 96 million, making it the world's fifteenth-most populous country...</p>
+          <p><button href="blog-post-welcome-to-vietnam.html" style="text-decoration: none;">Read more</button></p>
+        </div>
+
+        <div class="card">
+          <h2><a href="blog-post-china-tours.html" style="text-decoration: none;">China Tours</a></h2>
+          <h5>Kevin, Sep 24, 2022</h5>
+          <div class="image-frame" style="height:200px;">Image</div>
+          <p>China (Chinese: 中国; pinyin: Zhōngguó), officially the People's Republic of China (PRC; Chinese: 中华人民共和国; pinyin: Zhōnghuá Rénmín Gònghéguó), is a country in East Asia. It is the world's most populous country with a population exceeding 1.4 billion people.</p>
+          <p><button href="blog-post-china-tours.html" style="text-decoration: none;">Read more</button></p>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Blog's Footer -->
+    <div class="footer">
+      <footer>&copy; Copyright 2022 KhoiVu</footer>
+    </div>
+  
   </body>
 </html>

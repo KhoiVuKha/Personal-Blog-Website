@@ -70,6 +70,10 @@ body {
   padding: 20px;
 }
 
+.image-frame:hover {
+  opacity: 0.7;
+}
+
 .image-profile {
   display: block;
   margin-left: auto;
