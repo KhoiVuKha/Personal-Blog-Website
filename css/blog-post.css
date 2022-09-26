@@ -1,4 +1,4 @@
-.container{
+.container {
     /* Step 1: Set display to grid */
       display:grid;
    /* Step 2: setup rows amd columns */
@@ -10,21 +10,25 @@
       "main main main main main main main main"
       "ft ft ft ft ft ft ft ft";
       border: 2px solid yellow;
+}
 
-  }
-  .box{
-    border: 1px solid red;
-    background: #F8FA9D;
-  }
-  .header{
-    grid-area: hd;
-  }
-  .footer{
-    grid-area: ft;  
-  }
-  .feature{
-    grid-area: feat;
-  }
-  .content{
-    grid-area: main;
-  }
+.box {
+  border: 1px solid red;
+  background: #F8FA9D;
+}
+
+.header {
+  grid-area: hd;
+}
+
+.footer {
+  grid-area: ft;  
+}
+
+.feature {
+  grid-area: feat;
+}
+
+.content {
+  grid-area: main;
+}
