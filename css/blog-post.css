@@ -39,12 +39,14 @@
   grid-area: sd;
   margin-top: 5px;
   padding: 5px;
+  height: auto;
 }
 
 .content {
   grid-area: main;
   margin-top: 5px;
   padding: 5px;
+  height: auto;
 }
 
 /* If Screen Is Wide Enough */
@@ -68,6 +70,8 @@
   grid-template-columns: 50% 50%;
   grid-template-rows: 50% 50%;
   overflow: hidden;
+  text-align: left;
+  font-size: 16px;
 }
 
 .photoBox {
@@ -84,10 +88,10 @@
 .flex-container {
   display: flex;
   flex-direction: row;
-  font-size: 30px;
-  text-align: center;
   overflow: hidden;
   flex-wrap: wrap;
+  font-size: 16px;
+  text-align: left;
 }
 
 .flex-item {
@@ -103,6 +107,13 @@
   .flex-container {
     flex-direction: column;
     width: 100%;
+    padding: 0;
+  }
+
+  .nestedGrid {
+    display: block;
+    width: 100%;
+    padding: 0;
   }
 }
 
