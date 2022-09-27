@@ -1,4 +1,6 @@
 # Personal Blog Website
+This is repo for Personal Blog Website (1st project of Udacity Font End Web Developer Course)
+With this project, I have done some rubrics as follow:
 
 ## I. Structure
 ### 1. CSS Separate From HTML
@@ -15,62 +17,82 @@ There is an intentional user flow on each page with appropriate links as needed.
 ## II. Design
 ### 1. Custom Design
 Custom images, layout, and styling.
+
 ### 2. Foundations/Building Blocks
 - Typography: Custom design for typography with at least 3 unique properties for each typography selector
   - Headers (h1 to h3 at minimum) &lt;h1&gt;
   - Paragraph Text <p>
-    - Bold
-    - Italic
-    - Underlined
   - Links <a>
   - Quotes
 - Colors: At least 3 colors are used.
+
 ### 3. Components
 The following are used in the webpage:
 - Image(s)
 - Image caption
 - Buttons
 - Card
-### 4. Patterns
-The general pattern of the webpage should be as follows:
 
-- Blog Homepage
+### 4. Patterns
+I have created some pages as follow
+- Blog Homepage: (File index.html)
   + Navbar
   + Blog Post Card
     + Card
     + Image
     + Buttons
+  + SideBar
+    + About info
+    + Recent blog posts
+    + Social Sharing
+      + LinkedIn
+      + GitHub
+      + YouTube
   + Footer
 
-- Blog Post
+- Blog Post: (File html/blog-post-welcome-to-vietnam.html and html/blog-post-china-tours.html)
   + Header
-  + Author Info
-    + Name
-    + Title
-    + Current Company/School
-    + Short Bio
-    + Avatar
+  + SideBar
+    + Author of the post
+    + Introduction
+  + Main Content
   + Social Sharing
-    + Twitter
-    + Facebook
     + LinkedIn
-    
+    + GitHub
+    + YouTube
+
+- About page: same with SideBar in the Home page. (File html/about.html)
+
+- Blog post List: same with list Blog Post Card in the Home page. (File html/blog-post-list.html)
+
 ### 5. Pages
 The following pages should be present:
 
-- Blog Homepage
-- Blog Post
+- Blog Homepage (File index.html)
+- Blog Posts (File html/blog-post-welcome-to-vietnam.html and html/blog-post-china-tours.html)
+- Blog Posts List page (File html/blog-post-list.html)
+- About page (File html/about.html)
 
 ## III. Layout
 ### 1. Flexbox Based Layout
-Uses Flexbox at least twice throughout the project to create a component or pattern
+Flexbox was used in two posts: Welcome to Vietnam post and China Tours post and both was setup by blog-post.css
 
 ### 2. Grid Based Layout
-Uses CSS Grid at least twice throughout the project to create the layout for pages
+Grid layout was used in two posts: Welcome to Vietnam post and China Tours post and both was setup by blog-post.css
 
 ## IV. Responsiveness
 ### Multi-Device Web Design
 Pages are mobile-friendly and display correctly on all display sizes (mobile, tablet, desktop).
+Desktop:
+![image](https://user-images.githubusercontent.com/15206083/192469352-50cc1899-274e-420b-97b6-170e508b4cb1.png)
+
+Tablet: (iPad air)
+![image](https://user-images.githubusercontent.com/15206083/192469543-1518832a-804a-4c97-8e5d-96a883ed5f9c.png)
+
+Mobile:
+![image](https://user-images.githubusercontent.com/15206083/192469728-bc96d424-485f-4d9e-b83a-14a32345cd7e.png)
+
+TODO WORK: I still have trouble with Responsive layout for images in some posts (Welcome to Vietnam post and China Tours post)
 
 Note: Simulate Mobile Devices with Device Mode in Chrome DevTools.
 
@@ -82,7 +104,7 @@ Note: Simulate Mobile Devices with Device Mode in Chrome DevTools.
 ### 2. HTML Formatting Rules
 - All code is lowercase
 - The code does not have trailing white spaces.
-- Indentation is consistent (either all tabs or all 2 spaces or all 4 spaces etc).
+- Indentation is consistent (2 spaces).
 - Code uses a new line for every block, list or table element and indent every such child element (it is acceptable to put all elements in one line).
 - When quoting attribute values, code uses consistent quotation marks (single vs. double).
 
@@ -93,7 +115,7 @@ Note: Simulate Mobile Devices with Device Mode in Chrome DevTools.
 
 ### 4. CSS Formatting Rules
 - The code does not have trailing white spaces.
-- Indentation is consistent (either all tabs or all 2 spaces or all 4 spaces etc).
+- Indentation is consistent (2 spaces).
 - Code indents all content, that is rules within rules as well as declarations to reflect hierarchy and improve understanding.
 - The code uses a semicolon after every declaration for consistency and extensibility reasons.
 - Code always uses a space after a property name's colon, but no space between property and colon, for consistency reasons.
@@ -105,7 +127,3 @@ Note: Simulate Mobile Devices with Device Mode in Chrome DevTools.
 - The code uses meaningful or generic ID and class names that are as short as possible, but as long as necessary.
 - The code does not use element names in conjunction with IDs or classes.
 - The code uses shorthand properties where possible.
-- [Optional] Code omits unit specification after 0 values.
-- [Optional] Code includes leading 0s in decimal values for readability.
-- [Optional] Code uses 3-character hexadecimal notation where possible.
-- [Optional] Code separates words in ID and class names by a hyphen.
