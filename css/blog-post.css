@@ -1,14 +1,13 @@
 .container {
-    /* Step 1: Set display to grid */
-      display:grid;
-   /* Step 2: setup rows amd columns */
-      grid-template-columns: 300px 300px 300px;
-      grid-template-rows: 100px 250px 700px 150px;
-      grid-template-areas: 
-      "hd hd hd hd hd hd hd hd"
-      "feat feat feat feat feat feat feat feat"
-      "main main main main main main main main"
-      "ft ft ft ft ft ft ft ft";
+  display:grid;
+  grid-template-columns: 300px 300px 300px;
+  grid-template-rows: 100px 250px 600px;
+  /* Initially each element has its own row for small screens */
+  grid-template-areas: 
+  "hd"
+  "sd"
+  "main"
+  "ft";
 }
 
 .box {
@@ -18,9 +17,9 @@
 }
 
 .header {
-  grid-area: hd;
+  grid-area:hd;
   padding: 5px;
-  font-size: 25px;
+  font-size: 20px;
   text-align: center;
   background: #ddd;
 }
@@ -36,14 +35,153 @@
   margin-left: 50%;
 }
 
-.feature {
+.sidebar {
+  grid-area: sd;
   margin-top: 5px;
-  grid-area: feat;
   padding: 5px;
 }
 
 .content {
-  margin-top: 5px;
   grid-area: main;
+  margin-top: 5px;
   padding: 5px;
+}
+
+/* If Screen Is Wide Enough */
+@media(min-width:800px) {
+  .container {
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 250px 600px;
+    grid-template-areas: 
+    "hd hd hd hd hd hd"
+    "sd sd main main main main"
+    "sd sd main main main main"
+    "sd sd main main main main"
+    "ft ft ft ft ft ft";
+  }
+}
+
+/* For Grid of Image layout */
+.nestedGrid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+  overflow: hidden;
+}
+
+.photoBox {
+  width: 350px;
+  height: 150px;
+  background-color: #ddd;
+}
+
+/* For row image layout */
+* {
+  box-sizing: border-box;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  font-size: 30px;
+  text-align: center;
+  overflow: hidden;
+  flex-wrap: wrap;
+}
+
+.flex-item {
+  width: 350px;
+  height: 150px;
+  background-color: #f1f1f1;
+  padding: 10px;
+  border: 2px solid #cbcbcb;
+}
+
+/* Responsive layout - makes a one column-layout instead of n-column layout */
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+#hanoi {
+  background-image: url("../images/Vietnam/hanoi.jpg");
+  background-size: cover;
+}
+
+#halong {
+  background-image: url("../images/Vietnam/halongbay.jpg");
+  background-size: cover;
+}
+
+#danang {
+  background-image: url("../images/Vietnam/danang.jpg");
+  background-size: cover;
+}
+
+#hcmc {
+  background-image: url("../images/Vietnam/TP-HCM.jpg");
+  background-size: cover;
+}
+
+#pho {
+  background-image: url("../images/Vietnam/Vietnamese-cuisines/pho.jpg");
+  background-size: cover;
+}
+
+#bun-cha {
+  background-image: url("../images/Vietnam/Vietnamese-cuisines/bun-cha.jpg");
+  background-size: cover;
+}
+
+#nem {
+  background-image: url("../images/Vietnam/Vietnamese-cuisines/nem-ran.jpg");
+  background-size: cover;
+}
+
+#bun-bo-hue {
+  background-image: url("../images/Vietnam/Vietnamese-cuisines/bun-bo-hue.jpeg");
+  background-size: cover;
+}
+
+#banh-xeo {
+  background-image: url("../images/Vietnam/Vietnamese-cuisines/banh-xeo.jpg");
+  background-size: cover;
+}
+
+#beijing {
+  background-image: url("../images/China/Beijing.jpg");
+  background-size: cover;
+}
+
+#chengdu {
+  background-image: url("../images/China/chengdu.jpg");
+  background-size: cover;
+}
+
+#chongqing {
+  background-image: url("../images/China/chongqing.jpg");
+  background-size: cover;
+}
+
+#peking-roasted-duck {
+  background-image: url("../images/China/Chinese-cuisine/Peking-roasted-duck.PNG");
+  background-size: cover;
+}
+
+#ma-po-tofu {
+  background-image: url("../images/China/Chinese-cuisine/ma-po-tofu.PNG");
+  background-size: cover;
+}
+
+#dumplings {
+  background-image: url("../images/China/Chinese-cuisine/dumplings.PNG");
+  background-size: cover;
+}
+
+#hot-pot {
+  background-image: url("../images/China/Chinese-cuisine/hot-pot.PNG");
+  background-size: cover;
 }
