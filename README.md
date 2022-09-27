@@ -83,13 +83,17 @@ Grid layout was used in two posts: Welcome to Vietnam post and China Tours post 
 ## IV. Responsiveness
 ### Multi-Device Web Design
 Pages are mobile-friendly and display correctly on all display sizes (mobile, tablet, desktop).
-Desktop:
+
+- Desktop:
+
 ![image](https://user-images.githubusercontent.com/15206083/192469352-50cc1899-274e-420b-97b6-170e508b4cb1.png)
 
-Tablet: (iPad air)
+- Tablet: (iPad air)
+
 ![image](https://user-images.githubusercontent.com/15206083/192469543-1518832a-804a-4c97-8e5d-96a883ed5f9c.png)
 
-Mobile:
+- Mobile:
+
 ![image](https://user-images.githubusercontent.com/15206083/192469728-bc96d424-485f-4d9e-b83a-14a32345cd7e.png)
 
 TODO WORK: I still have trouble with Responsive layout for images in some posts (Welcome to Vietnam post and China Tours post)
