@@ -1,4 +1,5 @@
 @import 'image-store.css';
+@import 'custom-button.css';
 
 * {
   box-sizing: border-box;
@@ -48,15 +49,6 @@ body {
   margin-top: 20px;
 }
 
-/* Responsive layout - when the screen is less than 800px wide, 
-make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 800px) {
-  .sidebar, .content {
-    width: 100%;
-    padding: 0;
-  }
-}
-
 /* For Grid of Image layout */
 .nestedGrid {
   display: grid;
@@ -68,21 +60,16 @@ make the two columns stack on top of each other instead of next to each other */
 }
 
 .photoBox {
-  width: 350px;
-  height: 150px;
+  width: 100%;
+  height: 250px;
   background-color: #ddd;
 }
 
 /* For row image layout */
-* {
-  box-sizing: border-box;
-}
-
 .flex-container {
   display: flex;
   flex-direction: row;
-  overflow: hidden;
-  flex-wrap: wrap;
+  overflow-x: scroll;
   font-size: 16px;
   text-align: left;
 }
@@ -92,20 +79,26 @@ make the two columns stack on top of each other instead of next to each other */
   height: 150px;
   background-color: #f1f1f1;
   padding: 10px;
-  border: 2px solid #cbcbcb;
+  border: 2px solid #969494;
 }
 
-/* Responsive layout - makes a one column-layout instead of n-column layout */
-@media (max-width: 800px) {
-  .flex-container {
-    flex-direction: column;
+/* Responsive layout - when the screen is less than 800px wide, 
+make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .sidebar, .content {
     width: 100%;
     padding: 0;
   }
 
+  /* Grid Layout -> Column Layout */
   .nestedGrid {
     display: block;
     width: 100%;
-    padding: 0;
+  }
+
+  /* Row Layout -> Column Layout */
+  .flex-container {
+    flex-direction: column;
+    width: 100%;
   }
 }
