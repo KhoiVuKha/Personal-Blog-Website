@@ -1,0 +1,79 @@
+#hanoi {
+  background-image: url("../images/Vietnam/hanoi.jpg");
+  background-size: cover;
+}
+
+#halong {
+  background-image: url("../images/Vietnam/halongbay.jpg");
+  background-size: cover;
+}
+
+#danang {
+  background-image: url("../images/Vietnam/danang.jpg");
+  background-size: cover;
+}
+
+#hcmc {
+  background-image: url("../images/Vietnam/TP-HCM.jpg");
+  background-size: cover;
+}
+
+#pho {
+  background-image: url("../images/Vietnam/Vietnamese-cuisines/pho.jpg");
+  background-size: cover;
+}
+
+#bun-cha {
+  background-image: url("../images/Vietnam/Vietnamese-cuisines/bun-cha.jpg");
+  background-size: cover;
+}
+
+#nem {
+  background-image: url("../images/Vietnam/Vietnamese-cuisines/nem-ran.jpg");
+  background-size: cover;
+}
+
+#bun-bo-hue {
+  background-image: url("../images/Vietnam/Vietnamese-cuisines/bun-bo-hue.jpeg");
+  background-size: cover;
+}
+
+#banh-xeo {
+  background-image: url("../images/Vietnam/Vietnamese-cuisines/banh-xeo.jpg");
+  background-size: cover;
+}
+
+#beijing {
+  background-image: url("../images/China/Beijing.jpg");
+  background-size: cover;
+}
+
+#chengdu {
+  background-image: url("../images/China/chengdu.PNG");
+  background-size: cover;
+}
+
+#chongqing {
+  background-image: url("../images/China/chongqing.jpg");
+  background-size: cover;
+}
+
+#peking-roasted-duck {
+  background-image: url("../images/China/Chinese-cuisine/Peking-roasted-duck.PNG");
+  background-size: cover;
+}
+
+#ma-po-tofu {
+  background-image: url("../images/China/Chinese-cuisine/ma-po-tofu.PNG");
+  background-size: cover;
+}
+
+#dumplings {
+  background-image: url("../images/China/Chinese-cuisine/dumplings.PNG");
+  background-size: cover;
+}
+
+#hot-pot {
+  background-image: url("../images/China/Chinese-cuisine/hot-pot.PNG");
+  background-size: cover;
+}

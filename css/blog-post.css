@@ -1,66 +1,59 @@
-.container {
-  display:grid;
-  grid-template-columns: 300px 300px 300px;
-  grid-template-rows: 100px 250px 600px;
-  /* Initially each element has its own row for small screens */
-  grid-template-areas: 
-  "hd"
-  "sd"
-  "main"
-  "ft";
+@import 'image-store.css';
+
+* {
+  box-sizing: border-box;
 }
 
-.box {
+body {
   font-family: Arial;
   padding: 20px;
   background: #f1f1f1;
 }
 
+/* Header/Blog Title */
 .header {
-  grid-area:hd;
-  padding: 5px;
-  font-size: 20px;
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: white;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Side Bar*/
+.sidebar {
+  float: left;
+  width: 25%;
+}
+
+/* Blog Post content */
+.content {
+  float: left;
+  width: 75%;
+  padding-left: 30px;
+  padding-top: 2.5%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
   text-align: center;
   background: #ddd;
+  margin-top: 20px;
 }
 
-.footer {
-  grid-area: ft;
-  padding: 5px;
-  background: #ddd;
-  margin-top: 5px;
-}
-
-.footer::content social-icons {
-  margin-left: 50%;
-}
-
-.sidebar {
-  grid-area: sd;
-  margin-top: 5px;
-  padding: 5px;
-  height: auto;
-}
-
-.content {
-  grid-area: main;
-  margin-top: 5px;
-  padding: 5px;
-  height: auto;
-}
-
-/* If Screen Is Wide Enough */
-@media(min-width:800px) {
-  .container {
-    display: grid;
-    grid-template-columns: 300px 300px 300px;
-    grid-template-rows: 250px 600px;
-    grid-template-areas: 
-    "hd hd hd hd hd hd"
-    "sd sd main main main main"
-    "sd sd main main main main"
-    "sd sd main main main main"
-    "ft ft ft ft ft ft";
+/* Responsive layout - when the screen is less than 800px wide, 
+make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .sidebar, .content {
+    width: 100%;
+    padding: 0;
   }
 }
 
@@ -115,84 +108,4 @@
     width: 100%;
     padding: 0;
   }
-}
-
-#hanoi {
-  background-image: url("../images/Vietnam/hanoi.jpg");
-  background-size: cover;
-}
-
-#halong {
-  background-image: url("../images/Vietnam/halongbay.jpg");
-  background-size: cover;
-}
-
-#danang {
-  background-image: url("../images/Vietnam/danang.jpg");
-  background-size: cover;
-}
-
-#hcmc {
-  background-image: url("../images/Vietnam/TP-HCM.jpg");
-  background-size: cover;
-}
-
-#pho {
-  background-image: url("../images/Vietnam/Vietnamese-cuisines/pho.jpg");
-  background-size: cover;
-}
-
-#bun-cha {
-  background-image: url("../images/Vietnam/Vietnamese-cuisines/bun-cha.jpg");
-  background-size: cover;
-}
-
-#nem {
-  background-image: url("../images/Vietnam/Vietnamese-cuisines/nem-ran.jpg");
-  background-size: cover;
-}
-
-#bun-bo-hue {
-  background-image: url("../images/Vietnam/Vietnamese-cuisines/bun-bo-hue.jpeg");
-  background-size: cover;
-}
-
-#banh-xeo {
-  background-image: url("../images/Vietnam/Vietnamese-cuisines/banh-xeo.jpg");
-  background-size: cover;
-}
-
-#beijing {
-  background-image: url("../images/China/Beijing.jpg");
-  background-size: cover;
-}
-
-#chengdu {
-  background-image: url("../images/China/chengdu.PNG");
-  background-size: cover;
-}
-
-#chongqing {
-  background-image: url("../images/China/chongqing.jpg");
-  background-size: cover;
-}
-
-#peking-roasted-duck {
-  background-image: url("../images/China/Chinese-cuisine/Peking-roasted-duck.PNG");
-  background-size: cover;
-}
-
-#ma-po-tofu {
-  background-image: url("../images/China/Chinese-cuisine/ma-po-tofu.PNG");
-  background-size: cover;
-}
-
-#dumplings {
-  background-image: url("../images/China/Chinese-cuisine/dumplings.PNG");
-  background-size: cover;
-}
-
-#hot-pot {
-  background-image: url("../images/China/Chinese-cuisine/hot-pot.PNG");
-  background-size: cover;
 }
