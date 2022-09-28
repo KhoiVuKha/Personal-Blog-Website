@@ -1,0 +1,19 @@
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.card-heading {
+  text-decoration: none;
+}
+
+.card-image-big-size {
+  height: 200px; 
+  object-fit: cover;
+}
+
+.card-image-small-size {
+  height: 100px; 
+  object-fit: cover;
+}

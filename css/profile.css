@@ -13,4 +13,9 @@
     height: 50px;
     border-radius: 50%;
   }
+
+  .description-text {
+    text-align: center;
+    word-wrap: break-word;
+  }
   

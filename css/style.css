@@ -3,6 +3,7 @@
 @import 'profile.css';
 @import 'custom-button.css';
 @import 'image-frame.css';
+@import 'card.css';
 
 * {
   box-sizing: border-box;
@@ -37,12 +38,6 @@ body {
   float: left;
   width: 25%;
   padding-left: 20px;
-}
-
-.card {
-  background-color: white;
-  padding: 20px;
-  margin-top: 20px;
 }
 
 /* Clear floats after the columns */
