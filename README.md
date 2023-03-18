@@ -122,3 +122,7 @@ Note: Simulate Mobile Devices with Device Mode in Chrome DevTools.
 - The code uses meaningful or generic ID and class names that are as short as possible, but as long as necessary.
 - The code does not use element names in conjunction with IDs or classes.
 - The code uses shorthand properties where possible.
+
+## Deploment
+
+You can try this website [here](https://khois-first-personal-blog.netlify.app/)
